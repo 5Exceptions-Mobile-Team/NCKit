@@ -3,7 +3,7 @@
 Drop-in **NCKit.xcframework** for on-device noise cancellation (DeepFilterNet3 / libdf). Integrate via **Swift Package Manager**, **CocoaPods**, or by dragging the xcframework into Xcode.
 
 **Repository:** [github.com/5Exceptions-Mobile-Team/NCKit](https://github.com/5Exceptions-Mobile-Team/NCKit)  
-**Author:** 5Exceptions Software Solutions · Ayush Bharadwaj
+**Author:** 5Exceptions Software Solutions 
 
 ## Contents
 
