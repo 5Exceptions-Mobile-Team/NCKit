@@ -68,7 +68,7 @@ pod 'NCKit', :path => '../NCKit-iOS'
 Or from GitHub:
 
 ```ruby
-pod 'NCKit', :git => 'https://github.com/5Exceptions-Mobile-Team/NCKit.git', :tag => '1.0.0'
+pod 'NCKit', :git => 'https://<Token>@github.com/5Exceptions-Mobile-Team/NCKit.git', :tag => '1.0.0'
 ```
 
 Then:
