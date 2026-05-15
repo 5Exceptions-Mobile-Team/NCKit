@@ -2,7 +2,7 @@
 
 Drop-in **NCKit.xcframework** for on-device noise cancellation (DeepFilterNet3 / libdf). Integrate via **Swift Package Manager**, **CocoaPods**, or by dragging the xcframework into Xcode.
 
-**Repository:** [github.com/AyushBharadwaj/DFN3KIT](https://github.com/AyushBharadwaj/DFN3KIT)  
+**Repository:** [github.com/5Exceptions-Mobile-Team/NCKit](https://github.com/5Exceptions-Mobile-Team/NCKit)  
 **Author:** 5Exceptions Software Solutions · Ayush Bharadwaj
 
 ## Contents
@@ -45,7 +45,7 @@ targets: [
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AyushBharadwaj/DFN3KIT.git", from: "1.0.0")
+    .package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit.git", from: "1.0.0")
 ]
 ```
 
@@ -68,7 +68,7 @@ pod 'NCKit', :path => '../NCKit-iOS'
 Or from GitHub:
 
 ```ruby
-pod 'NCKit', :git => 'https://github.com/AyushBharadwaj/DFN3KIT.git', :tag => '1.0.0'
+pod 'NCKit', :git => 'https://github.com/5Exceptions-Mobile-Team/NCKit.git', :tag => '1.0.0'
 ```
 
 Then:
@@ -103,6 +103,42 @@ From the main **Krispy** repo root:
 ./scripts/build_dfn3kit_xcframework.sh
 cp -R NCKit/NCKit.xcframework NCKit-iOS/
 ```
+
+## CocoaPods: `pod spec lint`
+
+### Error: `vendored_frameworks` pattern did not match any file
+
+`pod spec lint` **downloads the git tag** from `s.source` in the podspec. It does **not** use files on your Mac unless you pass `--local`.
+
+**Fix A — lint on your machine (xcframework must be next to the podspec):**
+
+```bash
+cd NCKit-iOS   # folder containing NCKit.podspec + NCKit.xcframework
+ls NCKit.xcframework   # must exist
+pod spec lint NCKit.podspec --local --allow-warnings --skip-import-validation --skip-tests
+```
+
+**Fix B — lint against GitHub (for publishing):**
+
+1. Repo root layout at tag `1.0.0`:
+   ```
+   NCKit.podspec
+   NCKit.xcframework/
+   Package.swift
+   README.md
+   ```
+2. **Commit and push** `NCKit.xcframework` (~78 MB). Use [Git LFS](https://git-lfs.github.com) if the push is rejected.
+3. Create the tag: `git tag 1.0.0 && git push origin 1.0.0`
+4. Run lint **without** `--local` (uses the remote tag).
+
+**Common mistakes**
+
+| Problem | Fix |
+|---------|-----|
+| Only `.podspec` pushed, no binary | Add `NCKit.xcframework` to the repo |
+| Binary named `DFN3Kit.xcframework` | Rename to `NCKit.xcframework` **or** change `s.vendored_frameworks` to match |
+| Tag `1.0.0` missing on GitHub | `git tag 1.0.0 && git push origin 1.0.0` |
+| Linting from wrong directory | `cd` to the folder that contains both files |
 
 ## License
 
