@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NCKit"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Noise cancellation framework for iOS."
   s.description      = "NCKit provides on-device noise cancellation for iOS applications (DeepFilterNet3 / libdf)."
 
