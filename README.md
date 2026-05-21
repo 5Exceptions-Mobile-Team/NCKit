@@ -76,10 +76,6 @@ cd NCKit_Demo
 open NCKitSample.xcodeproj
 ```
 
-## Documentation
-
-Full guides, API details, and troubleshooting: **[docs.nckit.io](https://docs.nckit.io)**
-
 ## License
 
 Proprietary. See [LICENSE](LICENSE).
