@@ -247,9 +247,3 @@ The pipeline is numerically aligned with the CLI when using default settings (`a
 
 - **libdf (the Rust runtime) and the NCKit model weights**: Apache 2.0 / MIT dual-licensed per upstream [DeepFilterNet](https://github.com/Rikorose/DeepFilterNet).
 - **The Swift wrapper and packaging** in this framework is yours to use within the context of the project it's distributed with.
-
-Attribution for the DeepFilterNet paper is appreciated:
-
-> Schröter, H., Escalante-B., A. N., Rosenkranz, T., & Maier, A. (2022).
-> DeepFilterNet: Perceptually Motivated Real-Time Speech Enhancement.
-> *Interspeech 2022.*
