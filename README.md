@@ -72,7 +72,7 @@ Real-time mic: create one `NCKitProcessor`, call `processFrame` with `frameLengt
 
 ```bash
 git clone https://github.com/5Exceptions-Mobile-Team/NCKit_Demo.git
-cd NCKit_Demo/KrispyiOS
+cd NCKit_Demo
 open NCKitSample.xcodeproj
 ```
 
