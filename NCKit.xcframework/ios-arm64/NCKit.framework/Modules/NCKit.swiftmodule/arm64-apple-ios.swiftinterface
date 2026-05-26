@@ -40,3 +40,19 @@ final public class NCKitProcessor {
   final public func setAttenLim(_ db: Swift.Float)
   final public func setPostFilterBeta(_ b: Swift.Float)
 }
+final public class NCKitStreamProcessor {
+  public static let targetSampleRate: Swift.Double
+  final public let processor: NCKit.NCKitProcessor
+  final public var frameLength: Swift.Int {
+    get
+  }
+  public init(processor: NCKit.NCKitProcessor)
+  final public func prepare(inputFormat: AVFAudio.AVAudioFormat) throws
+  final public func convertToTargetFormat(_ buffer: AVFAudio.AVAudioPCMBuffer) throws -> [Swift.Float]
+  final public func process(buffer: AVFAudio.AVAudioPCMBuffer) throws -> [[Swift.Float]]
+  final public func processConverted(_ samples: [Swift.Float]) throws -> [[Swift.Float]]
+  final public func flush() throws -> [[Swift.Float]]
+  final public func setAttenLim(_ db: Swift.Float)
+  final public func setPostFilterBeta(_ b: Swift.Float)
+  @objc deinit
+}
