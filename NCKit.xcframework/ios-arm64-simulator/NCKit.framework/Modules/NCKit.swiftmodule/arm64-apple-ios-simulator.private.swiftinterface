@@ -54,5 +54,6 @@ final public class NCKitStreamProcessor {
   final public func flush() throws -> [[Swift.Float]]
   final public func setAttenLim(_ db: Swift.Float)
   final public func setPostFilterBeta(_ b: Swift.Float)
+  final public func reset()
   @objc deinit
 }

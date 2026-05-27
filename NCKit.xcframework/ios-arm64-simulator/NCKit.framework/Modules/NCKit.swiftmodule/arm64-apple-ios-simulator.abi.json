@@ -1484,6 +1484,28 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC5resetyyF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC5resetyyF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1596,7 +1618,7 @@
     {
       "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitStreamProcessor.swift",
       "kind": "BooleanLiteral",
-      "offset": 9110,
+      "offset": 10322,
       "length": 5,
       "value": "false"
     }
