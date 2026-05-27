@@ -28,13 +28,13 @@ Add **NCKit** to your app target and set **Embed & Sign**.
 `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit.git", from: "1.0.1")
+.package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit.git", from: "1.1.1")
 ```
 
 ### CocoaPods
 
 ```ruby
-pod 'NCKit', '~> 1.0.1'
+pod 'NCKit', '~> 1.1.1'
 ```
 
 ### Manual
