@@ -1,0 +1,1626 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "NCKit",
+    "printedName": "NCKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitAudioNormalizer",
+        "printedName": "NCKitAudioNormalizer",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "applySpeechGatedMakeupGain",
+            "printedName": "applySpeechGatedMakeupGain(_:sampleRate:targetRmsDbfs:maxGainDb:peakCeilingDbfs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15AudioNormalizerO26applySpeechGatedMakeupGain_10sampleRate13targetRmsDbfs03maxH2Db011peakCeilingM0ySaySfGz_SiS3ftFZ",
+            "mangledName": "$s5NCKit0A15AudioNormalizerO26applySpeechGatedMakeupGain_10sampleRate13targetRmsDbfs03maxH2Db011peakCeilingM0ySaySfGz_SiS3ftFZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "softLimitInPlace",
+            "printedName": "softLimitInPlace(_:peakCeilingDbfs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15AudioNormalizerO16softLimitInPlace_15peakCeilingDbfsySaySfGz_SftFZ",
+            "mangledName": "$s5NCKit0A15AudioNormalizerO16softLimitInPlace_15peakCeilingDbfsySaySfGz_SftFZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5NCKit0A15AudioNormalizerO",
+        "mangledName": "$s5NCKit0A15AudioNormalizerO",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitError",
+        "printedName": "NCKitError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "missingModel",
+            "printedName": "missingModel",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> (Swift.String) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NCKit.NCKitError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO12missingModelyACSScACmF",
+            "mangledName": "$s5NCKit0A5ErrorO12missingModelyACSScACmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "libraryInit",
+            "printedName": "libraryInit",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitError",
+                    "printedName": "NCKit.NCKitError",
+                    "usr": "s:5NCKit0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO11libraryInityA2CmF",
+            "mangledName": "$s5NCKit0A5ErrorO11libraryInityA2CmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "badFrameLength",
+            "printedName": "badFrameLength",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> (Swift.Int) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> NCKit.NCKitError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO14badFrameLengthyACSicACmF",
+            "mangledName": "$s5NCKit0A5ErrorO14badFrameLengthyACSicACmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cannotOpenInput",
+            "printedName": "cannotOpenInput",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitError",
+                    "printedName": "NCKit.NCKitError",
+                    "usr": "s:5NCKit0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO15cannotOpenInputyA2CmF",
+            "mangledName": "$s5NCKit0A5ErrorO15cannotOpenInputyA2CmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cannotCreateOutput",
+            "printedName": "cannotCreateOutput",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitError",
+                    "printedName": "NCKit.NCKitError",
+                    "usr": "s:5NCKit0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO18cannotCreateOutputyA2CmF",
+            "mangledName": "$s5NCKit0A5ErrorO18cannotCreateOutputyA2CmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unsupportedFormat",
+            "printedName": "unsupportedFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitError",
+                    "printedName": "NCKit.NCKitError",
+                    "usr": "s:5NCKit0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO17unsupportedFormatyA2CmF",
+            "mangledName": "$s5NCKit0A5ErrorO17unsupportedFormatyA2CmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resampleFailed",
+            "printedName": "resampleFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NCKit.NCKitError.Type) -> NCKit.NCKitError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitError",
+                    "printedName": "NCKit.NCKitError",
+                    "usr": "s:5NCKit0A5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NCKit.NCKitError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NCKitError",
+                        "printedName": "NCKit.NCKitError",
+                        "usr": "s:5NCKit0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:5NCKit0A5ErrorO14resampleFailedyA2CmF",
+            "mangledName": "$s5NCKit0A5ErrorO14resampleFailedyA2CmF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5NCKit0A5ErrorO",
+        "mangledName": "$s5NCKit0A5ErrorO",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitFileProcessor",
+        "printedName": "NCKitFileProcessor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "targetSampleRate",
+            "printedName": "targetSampleRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A13FileProcessorO16targetSampleRateSdvpZ",
+            "mangledName": "$s5NCKit0A13FileProcessorO16targetSampleRateSdvpZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A13FileProcessorO16targetSampleRateSdvgZ",
+                "mangledName": "$s5NCKit0A13FileProcessorO16targetSampleRateSdvgZ",
+                "moduleName": "NCKit",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "processFile",
+            "printedName": "processFile(inputURL:outputURL:processor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NCKitProcessor",
+                "printedName": "NCKit.NCKitProcessor",
+                "usr": "s:5NCKit0A9ProcessorC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A13FileProcessorO07processB08inputURL06outputF09processory10Foundation0F0V_AjA0aC0CtKFZ",
+            "mangledName": "$s5NCKit0A13FileProcessorO07processB08inputURL06outputF09processory10Foundation0F0V_AjA0aC0CtKFZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5NCKit0A13FileProcessorO",
+        "mangledName": "$s5NCKit0A13FileProcessorO",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitModelLocator",
+        "printedName": "NCKitModelLocator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "defaultBundle",
+            "printedName": "defaultBundle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A12ModelLocatorO13defaultBundleSo8NSBundleCvpZ",
+            "mangledName": "$s5NCKit0A12ModelLocatorO13defaultBundleSo8NSBundleCvpZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A12ModelLocatorO13defaultBundleSo8NSBundleCvgZ",
+                "mangledName": "$s5NCKit0A12ModelLocatorO13defaultBundleSo8NSBundleCvgZ",
+                "moduleName": "NCKit",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "modelTarGzURL",
+            "printedName": "modelTarGzURL(bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A12ModelLocatorO13modelTarGzURL6bundle10Foundation0G0VSo8NSBundleC_tKFZ",
+            "mangledName": "$s5NCKit0A12ModelLocatorO13modelTarGzURL6bundle10Foundation0G0VSo8NSBundleC_tKFZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:5NCKit0A12ModelLocatorO",
+        "mangledName": "$s5NCKit0A12ModelLocatorO",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CDeepFilter",
+        "printedName": "CDeepFilter",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitProcessor",
+        "printedName": "NCKitProcessor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "frameLength",
+            "printedName": "frameLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A9ProcessorC11frameLengthSivp",
+            "mangledName": "$s5NCKit0A9ProcessorC11frameLengthSivp",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A9ProcessorC11frameLengthSivg",
+                "mangledName": "$s5NCKit0A9ProcessorC11frameLengthSivg",
+                "moduleName": "NCKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(modelURL:attenLimDb:postFilterBeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NCKitProcessor",
+                "printedName": "NCKit.NCKitProcessor",
+                "usr": "s:5NCKit0A9ProcessorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "hasDefaultArg": true,
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5NCKit0A9ProcessorC8modelURL10attenLimDb14postFilterBetaAC10Foundation0D0V_S2ftKcfc",
+            "mangledName": "$s5NCKit0A9ProcessorC8modelURL10attenLimDb14postFilterBetaAC10Foundation0D0V_S2ftKcfc",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "processFrame",
+            "printedName": "processFrame(input:output:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sp"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeMutablePointer",
+                "printedName": "Swift.UnsafeMutablePointer<Swift.Float>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sp"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A9ProcessorC12processFrame5input6outputSfSpySfG_AGtF",
+            "mangledName": "$s5NCKit0A9ProcessorC12processFrame5input6outputSfSpySfG_AGtF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAttenLim",
+            "printedName": "setAttenLim(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A9ProcessorC11setAttenLimyySfF",
+            "mangledName": "$s5NCKit0A9ProcessorC11setAttenLimyySfF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPostFilterBeta",
+            "printedName": "setPostFilterBeta(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A9ProcessorC17setPostFilterBetayySfF",
+            "mangledName": "$s5NCKit0A9ProcessorC17setPostFilterBetayySfF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5NCKit0A9ProcessorC",
+        "mangledName": "$s5NCKit0A9ProcessorC",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NCKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NCKitStreamProcessor",
+        "printedName": "NCKitStreamProcessor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "targetSampleRate",
+            "printedName": "targetSampleRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A15StreamProcessorC16targetSampleRateSdvpZ",
+            "mangledName": "$s5NCKit0A15StreamProcessorC16targetSampleRateSdvpZ",
+            "moduleName": "NCKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A15StreamProcessorC16targetSampleRateSdvgZ",
+                "mangledName": "$s5NCKit0A15StreamProcessorC16targetSampleRateSdvgZ",
+                "moduleName": "NCKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "processor",
+            "printedName": "processor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NCKitProcessor",
+                "printedName": "NCKit.NCKitProcessor",
+                "usr": "s:5NCKit0A9ProcessorC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A15StreamProcessorC9processorAA0aC0Cvp",
+            "mangledName": "$s5NCKit0A15StreamProcessorC9processorAA0aC0Cvp",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NCKitProcessor",
+                    "printedName": "NCKit.NCKitProcessor",
+                    "usr": "s:5NCKit0A9ProcessorC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A15StreamProcessorC9processorAA0aC0Cvg",
+                "mangledName": "$s5NCKit0A15StreamProcessorC9processorAA0aC0Cvg",
+                "moduleName": "NCKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "frameLength",
+            "printedName": "frameLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5NCKit0A15StreamProcessorC11frameLengthSivp",
+            "mangledName": "$s5NCKit0A15StreamProcessorC11frameLengthSivp",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5NCKit0A15StreamProcessorC11frameLengthSivg",
+                "mangledName": "$s5NCKit0A15StreamProcessorC11frameLengthSivg",
+                "moduleName": "NCKit",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(processor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NCKitStreamProcessor",
+                "printedName": "NCKit.NCKitStreamProcessor",
+                "usr": "s:5NCKit0A15StreamProcessorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NCKitProcessor",
+                "printedName": "NCKit.NCKitProcessor",
+                "usr": "s:5NCKit0A9ProcessorC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5NCKit0A15StreamProcessorC9processorAcA0aC0C_tcfc",
+            "mangledName": "$s5NCKit0A15StreamProcessorC9processorAcA0aC0C_tcfc",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare(inputFormat:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioFormat",
+                "printedName": "AVFAudio.AVAudioFormat",
+                "usr": "c:objc(cs)AVAudioFormat"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC7prepare11inputFormatySo07AVAudioF0C_tKF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC7prepare11inputFormatySo07AVAudioF0C_tKF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "convertToTargetFormat",
+            "printedName": "convertToTargetFormat(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioPCMBuffer",
+                "printedName": "AVFAudio.AVAudioPCMBuffer",
+                "usr": "c:objc(cs)AVAudioPCMBuffer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC21convertToTargetFormatySaySfGSo16AVAudioPCMBufferCKF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC21convertToTargetFormatySaySfGSo16AVAudioPCMBufferCKF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(buffer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.Float]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVAudioPCMBuffer",
+                "printedName": "AVFAudio.AVAudioPCMBuffer",
+                "usr": "c:objc(cs)AVAudioPCMBuffer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC7process6bufferSaySaySfGGSo16AVAudioPCMBufferC_tKF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC7process6bufferSaySaySfGGSo16AVAudioPCMBufferC_tKF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processConverted",
+            "printedName": "processConverted(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.Float]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Float]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC16processConvertedySaySaySfGGAEKF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC16processConvertedySaySaySfGGAEKF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[[Swift.Float]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Float]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC5flushSaySaySfGGyKF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC5flushSaySaySfGGyKF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAttenLim",
+            "printedName": "setAttenLim(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC11setAttenLimyySfF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC11setAttenLimyySfF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPostFilterBeta",
+            "printedName": "setPostFilterBeta(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC17setPostFilterBetayySfF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC17setPostFilterBetayySfF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5NCKit0A15StreamProcessorC5resetyyF",
+            "mangledName": "$s5NCKit0A15StreamProcessorC5resetyyF",
+            "moduleName": "NCKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5NCKit0A15StreamProcessorC",
+        "mangledName": "$s5NCKit0A15StreamProcessorC",
+        "moduleName": "NCKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitAudioNormalizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3279,
+      "length": 3,
+      "value": "-18"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitAudioNormalizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3311,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitAudioNormalizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3348,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitAudioNormalizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6747,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitFileProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1936,
+      "length": 6,
+      "value": "48000"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitFileProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8163,
+      "length": 4,
+      "value": "8192"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitFileProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13310,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4748,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4777,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitStreamProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1672,
+      "length": 6,
+      "value": "48000"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitStreamProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2196,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/apple\/Downloads\/NCKit-SDK\/NCKit\/Sources\/NCKitStreamProcessor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10322,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
