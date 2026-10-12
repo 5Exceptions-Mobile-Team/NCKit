@@ -21,7 +21,7 @@ Xcode → **File → Add Package Dependencies…**
 https://github.com/5Exceptions-Mobile-Team/NCKit.git
 ```
 
-Version: **1.0.1** (or latest tag).
+Version: **1.2.1** (or latest tag).
 
 Add **NCKit** to your app target and set **Embed & Sign**.
 
