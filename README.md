@@ -6,7 +6,7 @@ On-device noise cancellation for iOS. No network, no server — processing stays
 
 | | |
 |-|-|
-| iOS | 16.0+ |
+| iOS | 15.0+ |
 | Xcode | 15+ |
 | Swift | 5.9+ |
 | Arch | arm64 device, arm64 + x86_64 simulator (Apple Silicon & Intel Mac) |
@@ -28,13 +28,13 @@ Add **NCKit** to your app target and set **Embed & Sign**.
 `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit.git", from: "1.1.1")
+.package(url: "https://github.com/5Exceptions-Mobile-Team/NCKit.git", from: "1.2.1")
 ```
 
 ### CocoaPods
 
 ```ruby
-pod 'NCKit', '~> 1.1.1'
+pod 'NCKit', '~> 1.2.1'
 ```
 
 ### Manual
