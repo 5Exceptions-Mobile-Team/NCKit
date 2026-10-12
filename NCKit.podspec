@@ -1,18 +1,20 @@
 Pod::Spec.new do |s|
   s.name             = "NCKit"
-  s.version          = "1.1.1"
+  s.version          = "1.2.1"
   s.summary          = "Noise cancellation framework for iOS."
   s.description      = "NCKit provides on-device noise cancellation for iOS applications (DeepFilterNet3 / libdf)."
 
   s.homepage         = "https://github.com/5Exceptions-Mobile-Team/NCKit"
   s.license          = {
     :type => "Proprietary",
-    :text => "Copyright © 2026 NCKit. All rights reserved."
+    :text => "Copyright © 2026 5Exceptions. All rights reserved."
   }
 
-  s.author           = { "NCKit" => "https://docs.nckit.io" }
+  s.author           = {
+    "5Exceptions Software Solutions" => "https://www.5exceptions.com"
+  }
 
-  s.platform         = :ios, "16.0"
+  s.platform         = :ios, "15.0"
   s.swift_version    = "5.9"
   s.requires_arc     = true
 
