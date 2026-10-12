@@ -6,7 +6,7 @@ On-device noise cancellation for iOS. No network, no server — processing stays
 
 | | |
 |-|-|
-| iOS | 16.0+ |
+| iOS | 15.0+ |
 | Xcode | 15+ |
 | Swift | 5.9+ |
 | Arch | arm64 device, arm64 + x86_64 simulator (Apple Silicon & Intel Mac) |
